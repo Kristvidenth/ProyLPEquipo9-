@@ -1,0 +1,79 @@
+#include<iostream>
+#include<conio>
+#include<stdlib>
+void lectura(int d, int V[])
+{
+   cout<<"Ingrese su horario e clases: \n";
+	for(int i=0; i<d;i++)
+   {
+   cin>> V[i];
+   }
+   cout<<'\n';
+}
+
+void mostrar(int V[], int d)
+{
+	for(int i=0; i<d;i++)
+   {
+   cout<< V[i];
+   }
+   cout<<'\n';
+}
+
+bool busqueda(int b, int V[], int d)
+{
+	bool encontrado = false;
+	for(int i=0; i<d;i++)
+   {
+    if (V[i]==b)
+    {
+    encontrado = true;
+    }
+   }
+   return encontrado;
+}
+
+void  ubicacion(int b, int V[], int d)
+{
+	int c = 0;
+   int Vec[10];
+	for(int i=0; i<d;i++)
+   {
+    if (V[i]==b)
+    {
+    Vec[c]=i;
+    c++;
+    cout<<Vec[i]<<'\t';
+    }
+   }
+
+
+}
+
+main()
+{
+int b, d, vector[10];
+bool e;
+cout<<"Ingrese la dimension del vector: \n";
+cin>> d;
+lectura(d,vector);
+cout<<"Vector ingresado: \n";
+mostrar(vector,d);
+
+cout<<"Ingrese el valor a buscar en el vector: \n";
+cin>> b;
+
+e = busqueda(b,vector,d);
+
+
+if (e==true)
+{
+cout<<"Elemento encontrado en las posiciones: ";
+}
+else
+{
+cout<<"Elemento no encontrado \n\n";
+}
+ubicacion(b, vector, d);
+getch();
+}
