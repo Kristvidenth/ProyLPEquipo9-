@@ -11,19 +11,19 @@ int main()
     char tecla;
 
 
-        ofstream archivolun("C:/BC5/Archivos/horariolun.txt");
+        ofstream archivolun("C:/BC5/HORARIO/horariolun.txt");
 	archivolun<<"\n";
 	archivolun.close();
-   ofstream archivomar("C:/BC5/Archivos/horariomar.txt");
+   ofstream archivomar("C:/BC5/HORARIO/horariomar.txt");
 	archivomar<<"\n";
 	archivomar.close();
-   ofstream archivomie("C:/BC5/Archivos/horariomie.txt");
+   ofstream archivomie("C:/BC5/HORARIO/horariomie.txt");
 	archivomie<<"\n";
 	archivomie.close();
-   ofstream archivojue("C:/BC5/Archivos/horariojue.txt");
+   ofstream archivojue("C:/BC5/HORARIO/horariojue.txt");
 	archivojue<<"\n";
 	archivojue.close();
-   ofstream archivovie("C:/BC5/Archivos/horariovie.txt");
+   ofstream archivovie("C:/BC5/HORARIO/horariovie.txt");
 	archivovie<<"\n";
 	archivovie.close();
 
